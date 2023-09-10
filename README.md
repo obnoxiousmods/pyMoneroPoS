@@ -3,6 +3,9 @@ A library for python applications to use native monero payment processing, you'l
 
 Examples
 
+    Checkout `starletteExample.py` for webapp that uses starlette ASGI + mongodb to 
+    be a payment processor
+
 About
 
-COMING SOON(TM)
+    This is a python library to simplify the process for a developer to accept monero payments programatically

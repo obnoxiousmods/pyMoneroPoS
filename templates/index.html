@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Monero PoC for PoS Library</title>
+    </head>
+
+    <body>
+        <h1>Monero PoC for PoS Library</h1>
+        Payment Address: {{ request.session.get('integratedAddress', "ERROR") }}<br>
+        Payment ID: {{ request.session.get('paymentId', "ERROR") }}<br/>
+        Payment Amount: {{ request.session.get('xmrAmount', "ERROR") }}<br>
+        Applied To User: {{ request.session.get('appliedToUser', "ERROR") }}<br/>
+
+        <br/><br/>
+        <a href="/lookForConfirmedPayment">Click me when you have sent payment and it has confirmed</a>
+    </body>
+</html>

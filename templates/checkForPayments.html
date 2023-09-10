@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Monero PoC for PoS Library</title>
+    </head>
+
+    <body>
+        <h1>Monero PoC for PoS Library</h1>
+        Payment Address: {{ request.session.get('integratedAddress', "ERROR") }}<br>
+        Payment ID: {{ request.session.get('paymentId', "ERROR") }}<br/>
+        Payment Amount: {{ request.session.get('xmrAmount', "ERROR") }}<br>
+        Applied To User: {{ request.get('appliedToUser', "ERROR") }}<br/>
+
+        <br/><br/>
+        Has a confirmed transaction been found?: {{ request.session['foundAConfirmedTransaction'] }}
+        <br/>
+        Has all found transactions add up to or exceed amount?: {{ request.session['transactionSumAmountIsCorrect'] }}
+
+        <meta http-equiv="refresh" content="10">
+    </body>
+</html>

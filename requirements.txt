@@ -1,0 +1,5 @@
+motor
+monero
+starlette
+jinja2
+itsdangerous
