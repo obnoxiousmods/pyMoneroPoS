@@ -23,6 +23,7 @@ Basic Example
     from moneropos import MoneroPoS
 
     if __name__ == "__main__":
+        # MoneroPoS(host=192.168.1.1, port=1337)
         mPoS = MoneroPoS()
         #print(mPoS.mainWalletAddress())
         print(
