@@ -6,7 +6,10 @@ from starlette.middleware.sessions import SessionMiddleware
 from starlette.templating import Jinja2Templates
 
 from motor import motor_asyncio
-from numpy.random import randint
+try:
+    from numpy.random import randint
+except:
+    from random import randint
 from moneropos import MoneroPoS
 
 async def homepage(request):  # sourcery skip: move-assign

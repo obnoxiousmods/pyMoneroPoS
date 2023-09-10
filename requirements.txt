@@ -3,3 +3,4 @@ monero
 starlette
 jinja2
 itsdangerous
+numpy
