@@ -4,3 +4,5 @@ starlette
 jinja2
 itsdangerous
 numpy
+httpx[socks]
+httpx
